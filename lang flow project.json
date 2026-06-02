@@ -1,0 +1,3 @@
+{
+  "message": "```python\nfrom selenium import webdriver\nfrom selenium.webdriver.common.by import By\n\ndef main():\n    driver = webdriver.Chrome()\n    driver.get(\"https://leafground.com/frame.xhtml\")\n    driver.maximize_window()\n    driver.implicitly_wait(15)\n    driver.switch_to.frame(0)\n    driver.find_element(By.ID, \"Click\").click()\n    driver.quit()\n\nif __name__ == \"__main__\":\n    main()\n```"
+}
