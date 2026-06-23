@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santhosh Kannan Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#0a0a0a;color:white;display:flex}
+.sidebar{
+width:250px;height:100vh;position:fixed;background:#111;
+padding:30px;border-right:2px solid #00f5ff
+}
+.sidebar h2{color:#00f5ff;margin-bottom:30px}
+.sidebar a{
+display:block;color:white;text-decoration:none;
+padding:12px;margin:8px 0;border-radius:8px
+}
+.sidebar a:hover{background:#00f5ff;color:black}
+.main{margin-left:250px;width:100%}
+section{min-height:100vh;padding:60px}
+.hero{
+display:flex;flex-direction:column;justify-content:center;
+align-items:center;text-align:center
+}
+.hero h1{font-size:3rem;color:#00f5ff}
+.hero p{margin:15px 0}
+.btn{
+background:#00f5ff;color:black;padding:12px 20px;
+border:none;border-radius:30px;text-decoration:none;font-weight:bold
+}
+.card-container{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px}
+.card{
+background:#111;padding:20px;border:1px solid #00f5ff;
+border-radius:12px;width:250px
+}
+.card:hover{transform:translateY(-5px)}
+input,textarea{
+width:100%;padding:10px;margin:10px 0;background:#222;
+border:1px solid #00f5ff;color:white
+}
+button{padding:10px 20px;background:#00f5ff;border:none}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+<h2>Santhosh</h2>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+
+<section id="home" class="hero">
+<h1>Santhosh Kannan</h1>
+<p>B.Tech Information Technology</p>
+<p>Java Developer | HTML Developer | Innovative Thinker</p>
+<a class="btn" href="#">Download Resume</a>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am a B.Tech IT graduate from Sri Sairam Engineering College passionate about software development and AI applications.</p>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card-container">
+<div class="card">
+<h3>B.Tech IT</h3>
+<p>Sri Sairam Engineering College</p>
+</div>
+<div class="card">
+<h3>12th Standard</h3>
+<p>SRV - 370/500</p>
+</div>
+<div class="card">
+<h3>10th Standard</h3>
+<p>SMBM - 395/500</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="card-container">
+<div class="card">Java</div>
+<div class="card">HTML</div>
+<div class="card">Innovative Thinking</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="card-container">
+<div class="card">
+<h3>AI Document QA Chatbot</h3>
+<p>RAG-based chatbot using Groq and embeddings.</p>
+</div>
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Modern personal portfolio application.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button>Send</button>
+</section>
+
+</div>
+</body>
+</html>
